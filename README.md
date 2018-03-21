@@ -7,6 +7,7 @@
 | 文件大小 | 233kb      | 229kb           | 124kb       |
 | 公司     | google     | alibaba         | square      |
 从文件大小来看：Gson>FastJson>Moshi，文件选用**Moshi**最优
+
 ## 性能对比
 ### 相关代码
 Bean类代码
