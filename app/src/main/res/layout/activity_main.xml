@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="top.mj93.jsontest.MainActivity">
+
+    <EditText
+        android:id="@+id/et_number"
+        android:layout_width="100dp"
+
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:inputType="number"
+
+        />
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/et_number"
+        android:id="@+id/reset_number"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="重置数量"
+        android:textSize="14sp"
+        android:onClick="resetNumber"
+        />
+
+
+    <Button
+        android:id="@+id/moshi"
+        app:layout_constraintTop_toBottomOf="@id/et_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Moshi"
+        android:textSize="14sp"
+        android:onClick="moshi"
+        />
+
+    <Button
+        android:id="@+id/gson"
+        app:layout_constraintTop_toBottomOf="@id/et_number"
+        app:layout_constraintLeft_toRightOf="@id/moshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Gson"
+        android:layout_marginLeft="15dp"
+        android:textSize="14sp"
+        android:onClick="gson"
+        />
+
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/gson"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@id/et_number"
+        android:text="Fastjson"
+        android:textSize="14sp"
+        android:onClick="fastjson"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/moshi"
+        android:layout_height="wrap_content" />
+
+
+</android.support.constraint.ConstraintLayout>
